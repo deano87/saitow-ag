@@ -1,0 +1,25 @@
+products-service:
+  build: products-service
+  container_name: lumen-php
+  volumes:
+    - ./products-service:/app
+  working_dir: /app/public
+  command: chown -R :www-data /app
+  command: chown www-data:www-data -R ../storage/
+  command: chmod -R 777 /app
+  command: chmod -R o+w /app/storage
+  command: php-fpm
+  # links:
+  #   - db
+  ports:
+    - "9002:9002"
+  environment:
+    APP_ENV: local
+
+nginx-router:
+  build: nginx
+  command: nginx -g "daemon off;"
+  links:
+    - products-service
+  ports:
+    - "9086:9086"

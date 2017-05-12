@@ -22,10 +22,10 @@ The service will have a command that will check if there are any files that need
 If a file hasn't been imported, we will check its type and call a matching import class to handle the fetching, normalizing and storing of the data
 
 <h4>Class diagram</h4>
-<img src="classDiagram.png" alt="class diagram" />
+<img src="class-diagram.png" alt="class diagram" />
 
 <h4>Block Diagram</h4>
-<img src="blockDiagram.png" alt="block diagram" />
+<img src="block-diagram.png" alt="block diagram" />
 
 <h4>Planned Testing</h4>
 
