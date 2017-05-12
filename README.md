@@ -22,3 +22,9 @@ The service will have a command that will check if there are any files that need
 If a file hasn't been imported, we will check its type and call a matching import class to handle the fetching, normalizing and storing of the data
 
 <img src="classDiagram.png" alt="class diagram" />
+
+<u>Planned Testing</u>
+
+Testing the command will be done using a <i>mock</i> directory that contains files similar to the files we plan to import
+
+The test will only check the normalization stage, as we can assume that the framework knows how to store data in the DB
