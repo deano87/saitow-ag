@@ -23,7 +23,7 @@ If a file hasn't been imported, we will check its type and call a matching impor
 
 <img src="classDiagram.png" alt="class diagram" />
 
-<u>Planned Testing</u>
+<h5>Planned Testing</h5>
 
 Testing the command will be done using a <i>mock</i> directory that contains files similar to the files we plan to import
 
