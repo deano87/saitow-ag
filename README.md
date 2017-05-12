@@ -21,9 +21,13 @@ The service will have a command that will check if there are any files that need
 
 If a file hasn't been imported, we will check its type and call a matching import class to handle the fetching, normalizing and storing of the data
 
+<h4>Class diagram</h4>
 <img src="classDiagram.png" alt="class diagram" />
 
-<h5>Planned Testing</h5>
+<h4>Block Diagram</h4>
+<img src="blockDiagram.png" alt="block diagram" />
+
+<h4>Planned Testing</h4>
 
 Testing the command will be done using a <i>mock</i> directory that contains files similar to the files we plan to import
 
