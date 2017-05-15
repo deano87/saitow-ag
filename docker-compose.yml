@@ -1,6 +1,5 @@
-products-service:
+products_service:
   build: products-service
-  container_name: lumen-php
   volumes:
     - ./products-service:/app
   working_dir: /app/public
@@ -16,10 +15,10 @@ products-service:
   environment:
     APP_ENV: local
 
-nginx-router:
+nginx_router:
   build: nginx
   command: nginx -g "daemon off;"
   links:
-    - products-service
+    - products_service
   ports:
     - "9086:9086"
