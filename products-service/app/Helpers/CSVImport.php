@@ -8,11 +8,7 @@ class CSVImport extends DataImport {
     private $rawData = [];
 
     public function fetch() {
-        if($this->isMock()) {
-            $path = storage_path('app/import/mock/' . $this->file);
-        } else {
-            $path = storage_path('app/import/' . $this->file);
-        }
+        $path = $this->getFilePath();
 
         if(!file_exists($path)) return false;
 

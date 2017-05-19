@@ -1,8 +1,6 @@
 <?php
 
 use App\Helpers\CSVImport;
-use Laravel\Lumen\Testing\DatabaseMigrations;
-use Laravel\Lumen\Testing\DatabaseTransactions;
 
 class CSVImportTest extends TestCase
 {

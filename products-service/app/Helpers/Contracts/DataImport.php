@@ -27,4 +27,13 @@ abstract class DataImport {
     public function isMock() {
       return $this->mock;
     }
+
+    public function getFilePath() {
+        if($this->mock) {
+            $path = storage_path('app/import/mock/' . $this->file);
+        } else {
+            $path = storage_path('app/import/' . $this->file);
+        }
+        return $path;
+    }
 }
